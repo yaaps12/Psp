@@ -10,10 +10,10 @@ public class Contador {
         this.c = c;
     }
 
-    public void incrementar() {
+    public synchronized void incrementar() {
         c++;
     }
-    public void decrementar() {
+    public synchronized void decrementar() {
         c--;
     }
 
