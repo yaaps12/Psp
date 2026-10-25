@@ -2,11 +2,10 @@ package ejerciciosclase;
 
 public class Sumador extends Thread {
     Contador c;
-    String name;
 
     public Sumador(Contador c, String name) {
         this.c = c;
-        this.name = name;
+        super.setName(name);
     }
 
 

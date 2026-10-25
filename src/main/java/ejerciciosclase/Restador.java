@@ -2,11 +2,11 @@ package ejerciciosclase;
 
 public class Restador implements Runnable {
     Contador c;
-    String name;
+
 
     public Restador(Contador c, String name) {
         this.c = c;
-        this.name = name;
+        Thread.currentThread().setName(name);
     }
 
 
